@@ -1,6 +1,5 @@
 import {useState} from 'react' 
-import styles form ''
-
+import styles from '../../styles/Home.module.css'
 export default function form1()
 {
 	const [formValues,setFormValues]=useState({}) 
@@ -18,50 +17,51 @@ export default function form1()
 		console.log("nameinput",event.target.value)	
 	}
   return (
-	  	  <form onSubmit={handleSubmit} action="">
-		<div class="container">
-	  <div class="texinputs">
+	  	  <form className = {styles.formpink} onSubmit={handleSubmit} action="">
+		<div className = {styles.gridform}class="container">
+	  <div className={styles.containerinputs}>
+	  <div className={styles.textinputs}>
 <label for="">
 								<p><i class="fas fa-signature"></i>&nbsp; Nome Completo</p>
 							</label>
 							<input name="name"  value={formValues.name || ""} onChange={handleInput} title="Digite somente letras" type="text" placeholder="Nome Completo"
 								id="name"/>
-							<p id="nametitle" class="titles"></p>
+							<p id="nametitle" className={styles.inputTitles}></p>
 							<label for="">
 								<p><i class="fas fa-phone-alt"></i>&nbsp; Número de Telefone</p>
 							</label>
 							<input value={formValues.phone || ""} name = "phone" onChange={handleInput}title="Digite no formato: 91987436543" type="text"
 								placeholder="Número de Telefone" id="phone"/>
-							<p id="phonetitle" class="titles"></p>
+							<p id="phonetitle" className={styles.inputTitles}></p>
 							<label for="">
 								<p><i class="fas fa-birthday-cake"></i>&nbsp; Data de Nascimento</p>
 							</label>
 							<input onChange={handleInput}name = "date" value={formValues.date || ""} type="date" placeholder="data de Nascimento" id="birthdate"/>
-							<p id="birthtitle"></p>
+							<p className = {styles.inputTitles} id="birthtitle"></p>
 							<label for="">
 								<p><i class="fas fa-at"></i>&nbsp; E-mail</p>
 							</label>
 							<input onChange={handleInput}name = "email" value={formValues.email || ""}   title="Digite um formato válido de E-mail" type="text" placeholder="E-mail"
 								id="email"/>
-							<p id="emailtitle" class="titles"></p>
+							<p id="emailtitle" className={styles.inputTitles}></p>
 							<label for="">
 								<p><i class="fas fa-city"></i>&nbsp; Cidade e Estado</p>
 							</label>
 							<input onChange={handleInput}title="Digite no formato: 'UF/cidade'" value={formValues.state || ""} name = "state" type="text"
 								placeholder="Cidade e Estado" id="city"/>
-							<p id="citytitle" class="titles"></p>
+							<p id="citytitle" className={styles.inputTitles}></p>
 							<label for="">
 								<p><i class="fas fa-university"></i>&nbsp; Faculdade/Escola</p>
 							</label>
 							<input onChange={handleInput}title="Digite somente letras" type="text" value={formValues.uni|| ""} name = "uni" placeholder="Faculdade/Escola"
 								id="college"/>
-							<p id="collegetitle" class="titles"></p>
+							<p id="collegetitle" className={styles.inputTitles}></p>
 	  </div>
+</div>
+	  <div className = {styles.divisor}></div>
 
-	  <div class="divisor"></div>
-
-	  <div class="radioinputs">
-		<div class="formacao">
+	  <div className={styles.radioinputs}>
+		<div className = {styles.formacao} >
 <p><i class="fas fa-graduation-cap"></i>&nbsp; Formação Acadêmica</p>
 							<p class="titles" id="radios1title"></p>
 							<span>
@@ -96,7 +96,7 @@ export default function form1()
 
 							</span>
 		</div>
-		<div class="social">
+		<div className={styles.social}>
 <p><i class="fas fa-network-wired"></i>&nbsp;Como ficou sabendo do curso?</p>
 							<p class="titles" id="radios2title"></p>
 							<span>
@@ -131,8 +131,8 @@ export default function form1()
 							</span>
 		</div>
 		</div>
-	  <button type="submit">Próximo</button>
 	  </div>
+<button type="submit">Próximo</button>
 	  </form>
   )
 }

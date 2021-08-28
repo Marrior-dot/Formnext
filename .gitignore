@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+componentes/formulario/.index.js.swp
+styles/.Home.module.css.swp
+styles/.globals.css.swp
