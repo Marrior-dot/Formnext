@@ -14,7 +14,7 @@ header .boximg{
 .formpink{
 	background-color: var(--form);
 	border-radius: 0.8rem;
-	width: 100%;
+	width: 80%;
 	min-width: 605px;
 	height: 570px;
 	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.2);
@@ -52,6 +52,7 @@ header .boximg{
 .containerinputs{
 	width: 50%;
 	margin-left: 1.5rem;
+	margin-right: 1.5rem;
 }
 
 .textinputs{
@@ -74,6 +75,32 @@ header .boximg{
 .inputTitles{
 	display: none;
 }
+@media screen and (max-width: 1000px){
+	.formpink{
+		width: 685px;
+		height: 60%;
+		margin: 0 auto;
+	}
+	.container{	
+		flex-direction: column;
+	}
+	.containerinputs{
+		align-items: center;
+	}
+	header .boximg{
+		margin: 0 auto;
+	}
+}
 
+@media screen and (max-width: 700px){
+	.formpink{
+		min-width: 300px;
+		width: 80%;
+	}
+	.gridform{
+		margin: 0 auto;
+		flex-direction: column;
+	}
+}
 
 

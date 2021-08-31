@@ -59,15 +59,22 @@ header {
 	align-items: center;
 }
 header h1{
-	min-width: (80%, 600px);
+	min-width: (80%, 530px);
 	font-size: 3.6rem;
 	color: var(--header);
 	align-self: center;
-
+	text-align: center;
 }
 ::placeholder{
 	font-size: 1.3rem;
 	font-family: Poppins;
 	padding-left: 0.6rem;
 	color: #B3B3B3;
+}
+@media screen and (max-width: 1000px){
+	header h1{
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
 }
