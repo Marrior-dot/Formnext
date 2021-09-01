@@ -63,7 +63,7 @@ export default function form1()
 	  <div className={styles.radioinputs}>
 		<div className = {styles.formacao} >
 <p><i class="fas fa-graduation-cap"></i>&nbsp; Formação Acadêmica</p>
-							<p class="titles" id="radios1title"></p>
+							<p  id="radios1title"></p>
 							<span>
 								<input type="radio" value="Fundamental Completo" name="knowing" id="FC"/>
 								<label for="FC">Fundamental Completo</label>

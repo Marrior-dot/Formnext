@@ -35,9 +35,12 @@ yarn-error.log*
 componentes/formulario/.index.js.swp
 styles/.Home.module.css.swp
 styles/.globals.css.swp
- pages/.index.js.swo
- styles/form1.css
- componentes/formulario/.index.js.swp
-           pages/index.js
-           styles/.Home.module.css.swp
-           styles/.globals.css.swp
+pages/.index.js.swo
+styles/form1.css
+componentes/formulario/.index.js.swp
+pages/index.js
+styles/.Home.module.css.swp
+styles/.globals.css.swp
+componentes/formulario/.index.js.swp
+styles/.Home.module.css.swp
+styles/.globals.css.swp

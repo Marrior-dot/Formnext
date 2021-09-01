@@ -62,15 +62,31 @@ header .boximg{
 	justify-content: flex-start;
 	padding: 2%;
 }
-.social{
-	display: flex;
-	flex-direction: column;
-
+.textinputs label{
+	width: 36rem;
 }
-.formacao{
+.textinputs label p{
+    	font-size: 1.5rem;
+    	font-weight: 400;
+    	margin-top: 0.9rem;
+    	margin-bottom: 0.9rem;
+}
+.social, .formacao{
 	display: flex;
 	flex-direction: column;
-
+}
+.social p:first-child{
+	font-size: 1.5rem;
+}
+.social p:nth-child(2){
+	margin:0;
+}
+.formacao p:first-child{
+	font-size: 1.5rem;
+	margin-top: 0;
+}
+.formacao p:nth-child(2){
+	margin: 0;
 }
 .inputTitles{
 	display: none;
