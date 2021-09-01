@@ -21,9 +21,11 @@ header .boximg{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin: 0 auto;
 }
 .gridform{
 	display: flex;
+	justify-content: space-between;
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -42,17 +44,37 @@ header .boximg{
 	width: 0px;
 	border: 1px solid var(--header);
 	border-radius:0.8rem;
+	margin-top: 3.1rem;
 }
 .radioinputs{
 	display: flex;
 	flex-direction: column;
 	width: 50%;
 	padding: 2%;
+	margin-top: 1.5rem;
+	margin-left: 1rem;
+}
+.formacao span{
+	margin-top: 0.7rem;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+.social span{
+	margin-top: 0.7rem;
+	font-size: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+.formacao span label{
+	margin-left: 1.2rem;
+}
+.social span label{
+	margin-left: 1.2rem;
 }
 .containerinputs{
 	width: 50%;
 	margin-left: 1.5rem;
-	margin-right: 1.5rem;
 }
 
 .textinputs{
@@ -77,6 +99,8 @@ header .boximg{
 }
 .social p:first-child{
 	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	width: 36rem;
 }
 .social p:nth-child(2){
 	margin:0;
@@ -84,6 +108,8 @@ header .boximg{
 .formacao p:first-child{
 	font-size: 1.5rem;
 	margin-top: 0;
+	margin-bottom: 1.5rem;
+	width: 36rem;
 }
 .formacao p:nth-child(2){
 	margin: 0;
@@ -106,16 +132,36 @@ header .boximg{
 	header .boximg{
 		margin: 0 auto;
 	}
+	.divisor{
+		margin-top: 1.5rem;
+	}
 }
 
 @media screen and (max-width: 700px){
 	.formpink{
+		margin: 0 auto;
 		min-width: 300px;
-		width: 80%;
+		width: 95%;
 	}
 	.gridform{
 		margin: 0 auto;
 		flex-direction: column;
+		width: 100%;
+	}
+	.containerinputs{
+		width: 90%;
+	}
+	.textinputs{
+		width: 100%;
+	}
+	.radioinputs{
+		margin: 0 auto;
+	}
+	.gridform input[type=text]{
+		width: 100%;
+	}
+	.divisor{
+		display: none;
 	}
 }
 

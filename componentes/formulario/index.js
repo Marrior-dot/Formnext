@@ -92,7 +92,7 @@ export default function form1()
 
 							<input class = "outro" type="radio" value="Outro" name ="knowing" id = "outro"/>
 							<label for="outro">Outro</label>
-							<input class = "outroinput" type = "text" ></input>	
+							<input hidden class = "outroinput" type = "text" ></input>	
 
 							</span>
 		</div>
